@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazırlık Notum - Destek & İletişim / Support & Contact</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --text-color: #1f2937;
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --border-color: #e5e7eb;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        .lang-switcher {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 15px;
+            gap: 10px;
+        }
+        .lang-btn {
+            background-color: #d1d5db;
+            border: none;
+            padding: 5px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .lang-btn.active {
+            background-color: #4b5563;
+            color: white;
+        }
+        .content-section {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f9fafb;
+            border-left: 4px solid var(--primary-color);
+            border-radius: 0 8px 8px 0;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #111827;
+            margin-bottom: 5px;
+        }
+        .contact-box {
+            background-color: #eff6ff;
+            border: 1px solid #bfdbfe;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .contact-box a {
+            color: var(--primary-color);
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #6b7280;
+        }
+        .lang-en { display: none; }
+        @media (max-width: 600px) {
+            .content-section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="lang-switcher">
+        <button class="lang-btn active" onclick="setLanguage('tr')">TR</button>
+        <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+    </div>
+
+    <div class="header">
+        <h1 class="lang-tr">Hazırlık Notum</h1>
+        <h1 class="lang-en">Hazırlık Notum (Prep Grade)</h1>
+        <p class="lang-tr">Destek & İletişim Sayfası</p>
+        <p class="lang-en">Support & Contact Page</p>
+    </div>
+
+    <div class="content-section">
+        <!-- TÜRKÇE -->
+        <div class="lang-tr">
+            <p><strong>Hazırlık Notum</strong> uygulamasını kullandığınız için teşekkür ederiz! Türkiye'deki tüm hazırlık öğrencilerinin yıl içi notlarını kolayca takip edebilmesi ve üniversite el kitaplarına ulaşabilmesi için geliştirilen bu uygulamada, her türlü soru, sorun ve öneriniz için yanınızdayız.</p>
+
+            <h2>❓ Sıkça Sorulan Sorular (SSS)</h2>
+            <div class="faq-item">
+                <div class="faq-question">1. Girdiğim notlar uygulamayı kapatınca siliniyor mu?</div>
+                <div class="faq-answer">Hayır. Uygulamaya girdiğiniz notlar Apple Core Data altyapısı kullanılarak telefonunuzun yerel hafızasına şifreli ve güvenli bir şekilde kaydedilir. Uygulamayı kapatıp açsanız bile notlarınız bıraktığınız gibi kalır.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">2. Benim üniversitem listede yok veya hesaplama formülü değişti, ne yapmalıyım?</div>
+                <div class="faq-answer">Üniversitelerin hazırlık yönetmelikleri dönemsel olarak güncellenebilmektedir. Eğer okulunuz listede yoksa ana ekrandaki "Üniversitem Listede Yok (Özel Hesaplama)" seçeneğini kullanarak kendi yüzdelerinizle hesaplama yapabilirsiniz. Okulunuzun formülünün eklenmesini istiyorsanız bize e-posta atabilirsiniz.</div>
+            </div>
+        </div>
+
+        <!-- ENGLISH -->
+        <div class="lang-en">
+            <p>Thank you for using **Hazırlık Notum**! This app is designed for university preparatory school students to track their midterm, quiz, and final grades, and easily access university student handbooks. We are here to help you with any questions or feedback.</p>
+
+            <h2>❓ Frequently Asked Questions (FAQ)</h2>
+            <div class="faq-item">
+                <div class="faq-question">1. Are my grades deleted when I close the app?</div>
+                <div class="faq-answer">No. The grades you enter are securely and locally stored in your device's local memory using Apple's Core Data framework. Your data remains safe even if you restart the application.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">2. My university is not listed or the formula has changed, what should I do?</div>
+                <div class="faq-answer">Prep school grading systems may change over time. If your school is not listed, you can use the "Custom Calculation" option on the home screen to calculate your average with your own percentages. You can also email us to request your university to be added.</div>
+            </div>
+        </div>
+
+        <div class="contact-box">
+            <h3 class="lang-tr">📨 İletişim & Geri Bildirim</h3>
+            <h3 class="lang-en">📨 Contact & Feedback</h3>
+            <p><strong>Email:</strong> <a href="mailto:okkescnklnc@gmail.com">okkescnklnc@gmail.com</a></p>
+            <p>Developer: Ökkeş Can Çinkılınç</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Hazırlık Notum. All Rights Reserved.
+    </div>
+</div>
+
+<script>
+    function setLanguage(lang) {
+        document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+        if (lang === 'tr') {
+            document.querySelectorAll('.lang-tr').forEach(el => el.style.display = 'block');
+            document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'none');
+        } else {
+            document.querySelectorAll('.lang-tr').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'block');
+        }
+        event.target.classList.add('active');
+    }
+</script>
+</body>
+</html>
